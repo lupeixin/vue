@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+
+<div id="app">
+    {{msg}}
+    <h3>年龄：{{age * 2}}</h3>
+    <h3>年龄：{{user.username}}, 密码：{{user.password}}</h3>
+    <h3>{{arr[2]}}</h3>
+    <h3>{{users[0].username}}</h3>
+
+
+
+</div>
+
+
+<script src="js/vue.min.js"></script>
+<script>
+    new Vue({
+        el: "#app",
+        data: {
+            msg: "百知教育欢迎大家",
+            age: "23",
+            user: {username: "小黑", password: "123456"},
+            arr: ["河南", "北京", "上海"],
+            users: [{username: "小白", password: "222333"},{"username": "小红", password: "444555"}]
+        }
+    })
+
+
+</script>
+</body>
+</html>
